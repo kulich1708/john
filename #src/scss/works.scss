@@ -1,0 +1,94 @@
+.works {
+	&__items {
+		padding: 0px 0px 50px 0px;
+		@media screen and (max-width: $md3+px) {
+			padding: 0px 0px 30px 0px;
+		}
+	}
+	&__main-title {
+		margin: 0px 0px 50px 0px;
+		@media screen and (max-width: $md3+px) {
+			font-size: 30px;
+			margin-bottom: 25px;
+		}
+	}
+	&__item {
+		border-bottom: 1px solid #e0e0e0;
+		padding: 0px 0px 30px 0px;
+		margin: 0px 0px 30px 0px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		@media screen and (min-width: $md3+px) {
+			display: flex;
+			align-items: flex-start;
+		}
+	}
+
+	&__image {
+		flex: 0 0 246px;
+		min-height: 180px;
+		border-radius: 6px;
+		display: block;
+		@media screen and (max-width: $md3+px) {
+			margin: 0px 0px 17px 0px;
+			padding: 0px 0px 60% 0px;
+		}
+	}
+
+	&__body {
+		flex: 1 1 auto;
+		@media screen and (min-width: $md3+px) {
+			padding: 0px 0px 0px 18px;
+		}
+	}
+
+	&__title {
+		display: inline-block;
+		font-size: 30px;
+		line-height: 145%;
+		font-weight: bold;
+		margin: 0px 0px 15px 0px;
+		transition: all 0.1s ease 0s;
+		@media screen and (max-width: $md3+px) {
+			font-size: 24px;
+		}
+		@media screen and (min-width: $md2+px) {
+			&:hover {
+				color: #ff6464;
+			}
+			&:not(:hover) {
+				transition: all 0.1s ease 0s;
+			}
+		}
+	}
+
+	&__info {
+		display: flex;
+		margin: 0px 0px 15px 0px;
+		align-items: center;
+	}
+
+	&__year {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		height: 25px;
+		background: #142850;
+		border-radius: 16px;
+		padding: 0 10px;
+		color: #fff;
+		font-weight: 900;
+		font-size: 18px;
+	}
+
+	&__category {
+		font-size: 20px;
+		line-height: 145%;
+		color: #8695a4;
+		margin: 0px 0px 0px 25px;
+	}
+
+	&__text {
+	}
+}
